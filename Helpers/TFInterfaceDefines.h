@@ -9,3 +9,7 @@
 */
 
 #pragma once
+#include "../JuceLibraryCode/JuceHeader.h"
+
+constexpr int windowWidth = 240;
+constexpr int windowHeight= 340;

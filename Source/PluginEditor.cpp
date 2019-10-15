@@ -10,12 +10,14 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "../Helpers/TFInterfaceDefines.h"
 
 //==============================================================================
 TonkFreezeAudioProcessorEditor::TonkFreezeAudioProcessorEditor (TonkFreezeAudioProcessor& p)
     : AudioProcessorEditor (&p), processor (p)
 {
-    setSize (400, 300);
+    setSize (windowWidth, windowHeight);
+	backgroundImage = ImageCache::getFromMemory(BinaryData::tonk_freeze_bg_png, BinaryData::tonk_freeze_bg_pngSize);
 }
 
 TonkFreezeAudioProcessorEditor::~TonkFreezeAudioProcessorEditor()
@@ -25,7 +27,7 @@ TonkFreezeAudioProcessorEditor::~TonkFreezeAudioProcessorEditor()
 //==============================================================================
 void TonkFreezeAudioProcessorEditor::paint (Graphics& g)
 {
-    g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));
+	g.drawImage(backgroundImage, getLocalBounds().toFloat());
 
     g.setColour (Colours::white);
     g.setFont (15.0f);
