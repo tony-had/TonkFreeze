@@ -13,3 +13,9 @@
 
 constexpr int windowWidth = 240;
 constexpr int windowHeight = 340;
+
+constexpr int centerPanelWidth = windowWidth;
+constexpr int centerPanelHeight = windowWidth;
+
+constexpr int settingsPanelWidth = windowWidth;
+constexpr int settingsPanelHeight = windowHeight - centerPanelHeight;
