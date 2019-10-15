@@ -6,6 +6,10 @@
               pluginManufacturerCode="TONK" pluginCode="Fre0" pluginVST3Category="Fx"
               pluginRTASCategory="8192" pluginAAXCategory="8192" pluginVSTCategory="kPlugCategEffect">
   <MAINGROUP id="kgCPaG" name="TonkFreeze">
+    <GROUP id="{6B7FAE41-67F7-8AA3-133D-75F9E265BE40}" name="Parameter Controls">
+      <FILE id="r5Xm2P" name="TFButton.cpp" compile="1" resource="0" file="Parameter Controls/TFButton.cpp"/>
+      <FILE id="Vh0q0P" name="TFButton.h" compile="0" resource="0" file="Parameter Controls/TFButton.h"/>
+    </GROUP>
     <GROUP id="{06D8D1F3-CCE1-FF4D-7CB7-656B9BCC4FB7}" name="Helpers">
       <FILE id="gaqenF" name="TFInterfaceDefines.h" compile="1" resource="0"
             file="Helpers/TFInterfaceDefines.h"/>
