@@ -13,6 +13,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 
 #include "../Helpers/TFInterfaceDefines.h"
+#include "../Parameter Controls/TFButton.h"
 
 //==============================================================================
 /*
@@ -27,5 +28,7 @@ public:
     void resized() override;
 
 private:
+	std::unique_ptr<TFButton> freezeButton;
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (CenterPanel)
 };

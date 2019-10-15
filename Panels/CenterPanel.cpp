@@ -15,6 +15,10 @@
 CenterPanel::CenterPanel()
 {
 	setSize(centerPanelWidth, centerPanelHeight);
+
+	freezeButton.reset(new TFButton());
+	addAndMakeVisible(freezeButton.get());
+	freezeButton->setCentreRelative(0.5f, 0.5f);
 }
 
 CenterPanel::~CenterPanel()
@@ -23,10 +27,6 @@ CenterPanel::~CenterPanel()
 
 void CenterPanel::paint (Graphics& g)
 {
-    g.setColour (Colours::white);
-    g.setFont (14.0f);
-    g.drawText ("CenterPanel", getLocalBounds(),
-                Justification::centred, true);   // draw some placeholder text
 }
 
 void CenterPanel::resized()
