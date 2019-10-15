@@ -1,9 +1,9 @@
 /*
   ==============================================================================
 
-    This file was auto-generated!
+	This file was auto-generated!
 
-    It contains the basic framework code for a JUCE plugin editor.
+	It contains the basic framework code for a JUCE plugin editor.
 
   ==============================================================================
 */
@@ -16,20 +16,20 @@
 //==============================================================================
 /**
 */
-class TonkFreezeAudioProcessorEditor  : public AudioProcessorEditor
+class TonkFreezeAudioProcessorEditor : public AudioProcessorEditor
 {
 public:
-    TonkFreezeAudioProcessorEditor (TonkFreezeAudioProcessor&);
-    ~TonkFreezeAudioProcessorEditor();
+	TonkFreezeAudioProcessorEditor(TonkFreezeAudioProcessor&);
+	~TonkFreezeAudioProcessorEditor();
 
-    //==============================================================================
-    void paint (Graphics&) override;
-    void resized() override;
+	//==============================================================================
+	void paint(Graphics&) override;
+	void resized() override;
 
 private:
-    TonkFreezeAudioProcessor& processor;
+	TonkFreezeAudioProcessor& processor;
 
 	Image backgroundImage;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TonkFreezeAudioProcessorEditor)
+	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(TonkFreezeAudioProcessorEditor)
 };
