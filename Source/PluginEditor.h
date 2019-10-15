@@ -36,7 +36,6 @@ private:
 	std::unique_ptr<SettingsPanel> settingsPanel;
 
 	Image backgroundImage;
-	//ImageButton test;
 
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(TonkFreezeAudioProcessorEditor)
 };
