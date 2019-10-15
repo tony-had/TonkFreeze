@@ -15,6 +15,10 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="IMAGcE" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
+    <GROUP id="{D45BE7DD-E55F-9DC9-F5C2-D7224199538F}" name="Assets">
+      <FILE id="NEWuNY" name="tonk_freeze_bg.png" compile="0" resource="1"
+            file="Assets/tonk_freeze_bg.png"/>
+    </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
     <VS2017 targetFolder="Builds/VisualStudio2017">
