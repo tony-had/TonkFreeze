@@ -12,6 +12,8 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 
+#include "../Helpers/TFInterfaceDefines.h"
+
 //==============================================================================
 /*
 */
