@@ -30,11 +30,11 @@ void TFCombobox::paint(Graphics& g)
 	int componentWidth = getWidth();
 	int margin = componentHeight / 10;
 	int imageSide = componentHeight - 2 * margin;
-	int comboboxWidth = componentWidth - imageSide - 2 * margin;
+	int comboboxWidth = componentWidth - imageSide - 4 * margin;
 	int comboboxHeight = imageSide;
 
 	Rectangle<float> imageBounds = Rectangle<float>(margin, margin, imageSide, imageSide);
-	Rectangle<int> comboboxBounds = Rectangle<int>(imageSide + 2 * margin, margin, comboboxWidth, comboboxHeight);
+	Rectangle<int> comboboxBounds = Rectangle<int>(imageSide + 3 * margin, margin, comboboxWidth, comboboxHeight);
 
 	combobox.setBounds(comboboxBounds);
 
