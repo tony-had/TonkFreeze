@@ -1,9 +1,9 @@
 /*
   ==============================================================================
 
-    CenterPanel.h
-    Created: 15 Oct 2019 7:15:27pm
-    Author:  tonyh
+	CenterPanel.h
+	Created: 15 Oct 2019 7:15:27pm
+	Author:  tonyh
 
   ==============================================================================
 */
@@ -18,17 +18,17 @@
 //==============================================================================
 /*
 */
-class CenterPanel    : public Component
+class CenterPanel : public Component
 {
 public:
-    CenterPanel();
-    ~CenterPanel();
+	CenterPanel();
+	~CenterPanel();
 
-    void paint (Graphics&) override;
-    void resized() override;
+	void paint(Graphics&) override;
+	void resized() override;
 
 private:
 	std::unique_ptr<TFButton> freezeButton;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (CenterPanel)
+	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(CenterPanel)
 };

@@ -9,13 +9,14 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
+
 #include "TFCombobox.h"
 
 //==============================================================================
 TFCombobox::TFCombobox(Image label)
 {
 	labelImage = label;
-	
+
 	addAndMakeVisible(combobox);
 }
 

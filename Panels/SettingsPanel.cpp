@@ -1,21 +1,22 @@
 /*
   ==============================================================================
 
-    SettingsPanel.cpp
-    Created: 15 Oct 2019 7:15:39pm
-    Author:  tonyh
+	SettingsPanel.cpp
+	Created: 15 Oct 2019 7:15:39pm
+	Author:  tonyh
 
   ==============================================================================
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
+
 #include "SettingsPanel.h"
 
 //==============================================================================
 SettingsPanel::SettingsPanel()
 {
 	setSize(settingsPanelWidth, settingsPanelHeight);
-	
+
 	// TODO: move images to TFLookAndFeel class
 	const Image frameImage = ImageCache::getFromMemory(BinaryData::frame_png, BinaryData::frame_pngSize);
 	windowSizeCombobox.reset(new TFCombobox(frameImage));
@@ -41,7 +42,7 @@ SettingsPanel::~SettingsPanel()
 {
 }
 
-void SettingsPanel::paint (Graphics& g)
+void SettingsPanel::paint(Graphics& g)
 {
 }
 

@@ -1,9 +1,9 @@
 /*
   ==============================================================================
 
-    CenterPanel.cpp
-    Created: 15 Oct 2019 7:15:27pm
-    Author:  tonyh
+	CenterPanel.cpp
+	Created: 15 Oct 2019 7:15:27pm
+	Author:  tonyh
 
   ==============================================================================
 */
@@ -26,13 +26,13 @@ CenterPanel::~CenterPanel()
 {
 }
 
-void CenterPanel::paint (Graphics& g)
+void CenterPanel::paint(Graphics& g)
 {
 }
 
 void CenterPanel::resized()
 {
-    // This method is where you should set the bounds of any child
-    // components that your component contains..
+	// This method is where you should set the bounds of any child
+	// components that your component contains..
 
 }

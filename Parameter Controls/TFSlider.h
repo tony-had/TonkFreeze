@@ -1,9 +1,9 @@
 /*
   ==============================================================================
 
-    TFSlider.h
-    Created: 22 Oct 2019 11:45:29am
-    Author:  tonyh
+	TFSlider.h
+	Created: 22 Oct 2019 11:45:29am
+	Author:  tonyh
 
   ==============================================================================
 */
@@ -15,15 +15,15 @@
 //==============================================================================
 /*
 */
-class TFSlider    : public Component
+class TFSlider : public Component
 {
 public:
-    TFSlider();
-    ~TFSlider();
+	TFSlider();
+	~TFSlider();
 
-    void paint (Graphics&) override;
-    void resized() override;
+	void paint(Graphics&) override;
+	void resized() override;
 
 private:
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TFSlider)
+	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(TFSlider)
 };

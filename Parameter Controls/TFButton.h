@@ -1,9 +1,9 @@
 /*
   ==============================================================================
 
-    TFButton.h
-    Created: 15 Oct 2019 5:12:10pm
-    Author:  tonyh
+	TFButton.h
+	Created: 15 Oct 2019 5:12:10pm
+	Author:  tonyh
 
   ==============================================================================
 */
@@ -11,6 +11,7 @@
 #pragma once
 
 #include "JuceHeader.h"
+
 #include "../Helpers/TFInterfaceDefines.h"
 
 class TFButton : public ImageButton
