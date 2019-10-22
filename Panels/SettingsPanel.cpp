@@ -15,12 +15,16 @@
 SettingsPanel::SettingsPanel()
 {
 	setSize(settingsPanelWidth, settingsPanelHeight);
-
-	windowSizeCombobox.reset(new TFCombobox());
+	
+	// TODO: move images to TFLookAndFeel class
+	const Image frameImage = ImageCache::getFromMemory(BinaryData::frame_png, BinaryData::frame_pngSize);
+	windowSizeCombobox.reset(new TFCombobox(frameImage));
 	windowSizeCombobox->setBounds(0, 0, settingsPanelWidth / 2, settingsPanelHeight / 3);
 	addAndMakeVisible(windowSizeCombobox.get());
 
-	hopSizeCombobox.reset(new TFCombobox());
+	// TODO: move images to TFLookAndFeel class
+	const Image rooImage = ImageCache::getFromMemory(BinaryData::roo_png, BinaryData::roo_pngSize);
+	hopSizeCombobox.reset(new TFCombobox(rooImage));
 	hopSizeCombobox->setBounds(settingsPanelWidth / 2, 0, settingsPanelWidth / 2, settingsPanelHeight / 3);
 	addAndMakeVisible(hopSizeCombobox.get());
 
