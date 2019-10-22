@@ -15,6 +15,22 @@
 SettingsPanel::SettingsPanel()
 {
 	setSize(settingsPanelWidth, settingsPanelHeight);
+
+	windowSizeCombobox.reset(new TFCombobox());
+	windowSizeCombobox->setBounds(0, 0, settingsPanelWidth / 2, settingsPanelHeight / 3);
+	addAndMakeVisible(windowSizeCombobox.get());
+
+	hopSizeCombobox.reset(new TFCombobox());
+	hopSizeCombobox->setBounds(settingsPanelWidth / 2, 0, settingsPanelWidth / 2, settingsPanelHeight / 3);
+	addAndMakeVisible(hopSizeCombobox.get());
+
+	windowTypeCombobox.reset(new ComboBox());
+	windowTypeCombobox->setBounds(0, settingsPanelHeight / 3, settingsPanelWidth, settingsPanelHeight / 3);
+	addAndMakeVisible(windowTypeCombobox.get());
+
+	mixSlider.reset(new TFSlider());
+	mixSlider->setBounds(0, 2 * settingsPanelHeight / 3, settingsPanelWidth, settingsPanelHeight / 3);
+	addAndMakeVisible(mixSlider.get());
 }
 
 SettingsPanel::~SettingsPanel()
@@ -23,15 +39,8 @@ SettingsPanel::~SettingsPanel()
 
 void SettingsPanel::paint (Graphics& g)
 {
-    g.setColour (Colours::white);
-    g.setFont (14.0f);
-    g.drawText ("SettingsPanel", getLocalBounds(),
-                Justification::centred, true);   // draw some placeholder text
 }
 
 void SettingsPanel::resized()
 {
-    // This method is where you should set the bounds of any child
-    // components that your component contains..
-
 }

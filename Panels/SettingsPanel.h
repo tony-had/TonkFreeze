@@ -13,6 +13,8 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 
 #include "../Helpers/TFInterfaceDefines.h"
+#include "../Parameter Controls/TFCombobox.h"
+#include "../Parameter Controls/TFSlider.h"
 
 //==============================================================================
 /*
@@ -27,5 +29,10 @@ public:
     void resized() override;
 
 private:
+	std::unique_ptr<TFCombobox> windowSizeCombobox;
+	std::unique_ptr<TFCombobox> hopSizeCombobox;
+	std::unique_ptr<ComboBox> windowTypeCombobox;
+	std::unique_ptr<TFSlider> mixSlider;
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SettingsPanel)
 };

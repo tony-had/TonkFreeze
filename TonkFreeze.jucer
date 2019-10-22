@@ -16,10 +16,15 @@
     <GROUP id="{6B7FAE41-67F7-8AA3-133D-75F9E265BE40}" name="Parameter Controls">
       <FILE id="r5Xm2P" name="TFButton.cpp" compile="1" resource="0" file="Parameter Controls/TFButton.cpp"/>
       <FILE id="Vh0q0P" name="TFButton.h" compile="0" resource="0" file="Parameter Controls/TFButton.h"/>
+      <FILE id="P6g2UR" name="TFCombobox.cpp" compile="1" resource="0" file="Parameter Controls/TFCombobox.cpp"/>
+      <FILE id="byCUbe" name="TFCombobox.h" compile="0" resource="0" file="Parameter Controls/TFCombobox.h"/>
+      <FILE id="ritGao" name="TFSlider.cpp" compile="1" resource="0" file="Parameter Controls/TFSlider.cpp"/>
+      <FILE id="g1AsmG" name="TFSlider.h" compile="0" resource="0" file="Parameter Controls/TFSlider.h"/>
     </GROUP>
     <GROUP id="{06D8D1F3-CCE1-FF4D-7CB7-656B9BCC4FB7}" name="Helpers">
       <FILE id="gaqenF" name="TFInterfaceDefines.h" compile="1" resource="0"
             file="Helpers/TFInterfaceDefines.h"/>
+      <FILE id="dVAMhx" name="TFLookAndFeel.h" compile="1" resource="0" file="Helpers/TFLookAndFeel.h"/>
     </GROUP>
     <GROUP id="{57F3898F-F1A9-3A50-1A4F-7E4B16940AF2}" name="Source">
       <FILE id="x1famt" name="PluginProcessor.cpp" compile="1" resource="0"
