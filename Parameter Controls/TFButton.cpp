@@ -8,15 +8,23 @@
   ==============================================================================
 */
 
+#include "../JuceLibraryCode/JuceHeader.h"
+
 #include "TFButton.h"
 
 TFButton::TFButton()
 {
-	setImages(true, true, true, ImageCache::getFromMemory(BinaryData::freeze_off_png, BinaryData::freeze_off_pngSize),
+	// TODO: Move the images and button drawing to the TFLookAndFeel class
+
+	const Image freezeOnImage = ImageCache::getFromMemory(BinaryData::freeze_on_png, BinaryData::freeze_on_pngSize);
+	const Image freezeOffImage = ImageCache::getFromMemory(BinaryData::freeze_off_png, BinaryData::freeze_off_pngSize);
+
+	setImages(true, true, true,
+		freezeOffImage,
 		1.f, Colour::fromFloatRGBA(0.f, 0.f, 0.f, 0.f),
-		ImageCache::getFromMemory(BinaryData::freeze_off_png, BinaryData::freeze_off_pngSize),
+		freezeOffImage,
 		1.f, Colour::fromFloatRGBA(0.f, 0.f, 0.f, 0.f),
-		ImageCache::getFromMemory(BinaryData::freeze_on_png, BinaryData::freeze_on_pngSize),
+		freezeOnImage,
 		1.f, Colour::fromFloatRGBA(0.f, 0.f, 0.f, 0.f));
 	setClickingTogglesState(true);
 }

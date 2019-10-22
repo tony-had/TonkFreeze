@@ -9,6 +9,7 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
+
 #include "TFSlider.h"
 
 //==============================================================================

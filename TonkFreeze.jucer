@@ -36,6 +36,8 @@
       <FILE id="IMAGcE" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
     <GROUP id="{D45BE7DD-E55F-9DC9-F5C2-D7224199538F}" name="Assets">
+      <FILE id="pcGBzq" name="dry.png" compile="0" resource="1" file="Assets/dry.png"/>
+      <FILE id="xF09Ll" name="wet.png" compile="0" resource="1" file="Assets/wet.png"/>
       <FILE id="RUSehP" name="frame.png" compile="0" resource="1" file="Assets/frame.png"/>
       <FILE id="XDqL5O" name="freeze_off.png" compile="0" resource="1" file="Assets/freeze_off.png"/>
       <FILE id="CfKb1A" name="freeze_on.png" compile="0" resource="1" file="Assets/freeze_on.png"/>

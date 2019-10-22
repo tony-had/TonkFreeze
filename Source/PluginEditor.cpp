@@ -17,6 +17,7 @@ TonkFreezeAudioProcessorEditor::TonkFreezeAudioProcessorEditor(TonkFreezeAudioPr
 	: AudioProcessorEditor(&p), processor(p)
 {
 	setSize(windowWidth, windowHeight);
+
 	backgroundImage = ImageCache::getFromMemory(BinaryData::tonk_freeze_bg_png, BinaryData::tonk_freeze_bg_pngSize);
 
 	centerPanel.reset(new CenterPanel());
