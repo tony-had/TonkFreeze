@@ -16,6 +16,7 @@
 SettingsPanel::SettingsPanel()
 {
 	setSize(settingsPanelWidth, settingsPanelHeight);
+	int margin = settingsPanelHeight / 30;
 
 	// TODO: move images to TFLookAndFeel class
 	const Image frameImage = ImageCache::getFromMemory(BinaryData::frame_png, BinaryData::frame_pngSize);
@@ -30,10 +31,13 @@ SettingsPanel::SettingsPanel()
 	addAndMakeVisible(hopSizeCombobox.get());
 
 	windowTypeCombobox.reset(new ComboBox());
-	windowTypeCombobox->setBounds(0, settingsPanelHeight / 3, settingsPanelWidth, settingsPanelHeight / 3);
+	windowTypeCombobox->setBounds(margin, settingsPanelHeight / 3 + margin, settingsPanelWidth - 2 * margin, settingsPanelHeight / 3 - 2 * margin);
 	addAndMakeVisible(windowTypeCombobox.get());
 
-	mixSlider.reset(new TFSlider());
+	// TODO: move images to TFLookAndFeel class
+	const Image dryImage = ImageCache::getFromMemory(BinaryData::dry_png, BinaryData::dry_pngSize);
+	const Image wetImage = ImageCache::getFromMemory(BinaryData::wet_png, BinaryData::wet_pngSize);
+	mixSlider.reset(new TFSlider(dryImage, wetImage));
 	mixSlider->setBounds(0, 2 * settingsPanelHeight / 3, settingsPanelWidth, settingsPanelHeight / 3);
 	addAndMakeVisible(mixSlider.get());
 }

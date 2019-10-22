@@ -18,12 +18,14 @@
 class TFSlider : public Component
 {
 public:
-	TFSlider();
+	TFSlider(Image minImage, Image maxImage);
 	~TFSlider();
 
 	void paint(Graphics&) override;
 	void resized() override;
 
 private:
+	Image minLabelImage;
+	Image maxLabelImage;
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(TFSlider)
 };

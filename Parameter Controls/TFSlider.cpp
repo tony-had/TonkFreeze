@@ -13,8 +13,10 @@
 #include "TFSlider.h"
 
 //==============================================================================
-TFSlider::TFSlider()
+TFSlider::TFSlider(Image minImage, Image maxImage)
 {
+	minLabelImage = minImage;
+	maxLabelImage = maxImage;
 }
 
 TFSlider::~TFSlider()
@@ -23,12 +25,17 @@ TFSlider::~TFSlider()
 
 void TFSlider::paint(Graphics& g)
 {
-	g.drawRect(getLocalBounds(), 1);
+	int componentHeight = getHeight();
+	int componentWidth = getWidth();
+	int margin = componentHeight / 10;
+	int imageSide = componentHeight - 2 * margin;
+	int comboboxWidth = componentWidth - imageSide - 2 * margin;
 
-	g.setColour(Colours::white);
-	g.setFont(14.0f);
-	g.drawText("TFSlider", getLocalBounds(),
-		Justification::centred, true);
+	Rectangle<float> minLabelImageBounds = Rectangle<float>(margin, margin, imageSide, imageSide);
+	Rectangle<float> maxLabelImageBounds = Rectangle<float>(componentWidth - margin - imageSide, margin, imageSide, imageSide);
+
+	g.drawImage(minLabelImage, minLabelImageBounds);
+	g.drawImage(maxLabelImage, maxLabelImageBounds);
 }
 
 void TFSlider::resized()
