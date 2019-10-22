@@ -12,8 +12,10 @@
 #include "TFCombobox.h"
 
 //==============================================================================
-TFCombobox::TFCombobox()
+TFCombobox::TFCombobox(Image label)
 {
+	labelImage = label;
+	
 	addAndMakeVisible(combobox);
 }
 
@@ -23,12 +25,19 @@ TFCombobox::~TFCombobox()
 
 void TFCombobox::paint(Graphics& g)
 {
-	g.drawRect(getLocalBounds(), 1);
+	int componentHeight = getHeight();
+	int componentWidth = getWidth();
+	int margin = componentHeight / 10;
+	int imageSide = componentHeight - 2 * margin;
+	int comboboxWidth = componentWidth - imageSide - 2 * margin;
+	int comboboxHeight = imageSide;
 
-	g.setColour(Colours::white);
-	g.setFont(14.0f);
-	g.drawText("TFCombobox", getLocalBounds(),
-		Justification::centred, true);
+	Rectangle<float> imageBounds = Rectangle<float>(margin, margin, imageSide, imageSide);
+	Rectangle<int> comboboxBounds = Rectangle<int>(imageSide + 2 * margin, margin, comboboxWidth, comboboxHeight);
+
+	combobox.setBounds(comboboxBounds);
+
+	g.drawImage(labelImage, imageBounds);
 }
 
 void TFCombobox::resized()

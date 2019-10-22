@@ -20,7 +20,7 @@
 class TFCombobox : public Component
 {
 public:
-	TFCombobox();
+	TFCombobox(Image label);
 	~TFCombobox();
 
 	void paint(Graphics&) override;
@@ -29,5 +29,6 @@ public:
 private:
 	ComboBox combobox;
 	Image labelImage;
+
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(TFCombobox)
 };
