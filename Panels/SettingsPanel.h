@@ -1,9 +1,9 @@
 /*
   ==============================================================================
 
-    SettingsPanel.h
-    Created: 15 Oct 2019 7:15:39pm
-    Author:  tonyh
+	SettingsPanel.h
+	Created: 15 Oct 2019 7:15:39pm
+	Author:  tonyh
 
   ==============================================================================
 */
@@ -19,14 +19,14 @@
 //==============================================================================
 /*
 */
-class SettingsPanel    : public Component
+class SettingsPanel : public Component
 {
 public:
-    SettingsPanel();
-    ~SettingsPanel();
+	SettingsPanel();
+	~SettingsPanel();
 
-    void paint (Graphics&) override;
-    void resized() override;
+	void paint(Graphics&) override;
+	void resized() override;
 
 private:
 	std::unique_ptr<TFCombobox> windowSizeCombobox;
@@ -34,5 +34,5 @@ private:
 	std::unique_ptr<ComboBox> windowTypeCombobox;
 	std::unique_ptr<TFSlider> mixSlider;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SettingsPanel)
+	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(SettingsPanel)
 };
