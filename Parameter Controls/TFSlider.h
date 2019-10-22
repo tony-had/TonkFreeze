@@ -25,7 +25,9 @@ public:
 	void resized() override;
 
 private:
+	Slider slider;
 	Image minLabelImage;
 	Image maxLabelImage;
+
 	JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(TFSlider)
 };
