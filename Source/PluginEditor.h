@@ -13,6 +13,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "PluginProcessor.h"
 
+#include "../Helpers/TFLookAndFeel.h"
 #include "../Panels/CenterPanel.h"
 #include "../Panels/SettingsPanel.h"
 
@@ -31,6 +32,8 @@ public:
 
 private:
 	TonkFreezeAudioProcessor& processor;
+
+	TFLookAndFeel lookAndFeel;
 
 	std::unique_ptr<CenterPanel> centerPanel;
 	std::unique_ptr<SettingsPanel> settingsPanel;

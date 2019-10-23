@@ -19,6 +19,8 @@ TonkFreezeAudioProcessorEditor::TonkFreezeAudioProcessorEditor(TonkFreezeAudioPr
 {
 	setSize(windowWidth, windowHeight);
 
+	setLookAndFeel(&lookAndFeel);
+
 	backgroundImage = ImageCache::getFromMemory(BinaryData::tonk_freeze_bg_png, BinaryData::tonk_freeze_bg_pngSize);
 
 	centerPanel.reset(new CenterPanel());
@@ -32,6 +34,8 @@ TonkFreezeAudioProcessorEditor::TonkFreezeAudioProcessorEditor(TonkFreezeAudioPr
 
 TonkFreezeAudioProcessorEditor::~TonkFreezeAudioProcessorEditor()
 {
+	// set to nullptr so that we don't try to delete the look and feel object while it is being used
+	setLookAndFeel(nullptr);
 }
 
 //==============================================================================

@@ -17,9 +17,11 @@ class TFLookAndFeel : public LookAndFeel_V4
 public:
 	TFLookAndFeel()
 	{
+		setColour(ComboBox::backgroundColourId, Colours::transparentWhite);
+		setColour(PopupMenu::backgroundColourId, Colour(4, 88, 125));
 	}
 
-	TFLookAndFeel()
+	~TFLookAndFeel()
 	{
 	};
 
